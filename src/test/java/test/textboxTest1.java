@@ -22,9 +22,8 @@ public class textboxTest1 {
         $(byText("Reading")).click();
         $(byText("Music")).click();
         $("#currentAddress").setValue("Vasya");
-        $("#state").
         $("#subjectsInput").setValue("subject1");
-               sleep(10000);
+        sleep(10000);
 
         System.out.println("debug");
     }
