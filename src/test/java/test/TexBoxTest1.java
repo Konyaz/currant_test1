@@ -20,9 +20,6 @@ public class TexBoxTest1 {
         $(".react-datepicker__month-select").selectOptionByValue("4");
         $(".react-datepicker__year-select").selectOptionByValue("1900");
         $$(".react-datepicker__day").filter(not(cssClass("react-datepicker__day--outside-month"))).find(text("29")).click();
-
-
-
         $(byText("Male")).click();
         $(byText("Sports")).click();
         $(byText("Reading")).click();
@@ -31,13 +28,14 @@ public class TexBoxTest1 {
         $("#subjectsInput").setValue("a");
         $(byText("Arts")).click();
         $("#uploadPicture").uploadFromClasspath("docs/test.txt");
+        $("#react-select-3-input").setValue("n");
+        $(byText("NCR")).click();
+        $("#react-select-4-input").setValue("d");
+        $(byText("Delhi")).click();
 
-
-
-
-        sleep(200000);
 
         System.out.println("debug");
+
     }
 }
 
