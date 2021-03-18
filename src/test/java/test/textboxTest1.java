@@ -18,11 +18,13 @@ public class textboxTest1 {
         $("#gender-radio-1").doubleClick();
         $("#userNumber").setValue("911");
         $("#dateOfBirth").doubleClick();
-        $("#subjectsInput").setValue("subject1");
         $(byText("Sports")).click();
         $(byText("Reading")).click();
         $(byText("Music")).click();
-        sleep(10000);
+        $("#currentAddress").setValue("Vasya");
+        $("#state").
+        $("#subjectsInput").setValue("subject1");
+               sleep(10000);
 
         System.out.println("debug");
     }
