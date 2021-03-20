@@ -15,7 +15,7 @@ public class TexBoxTest1 {
         $("#firstName").setValue("Vasya");
         $("#lastName").setValue("Vasya");
         $("#userEmail").setValue("1@1.com");
-        $("#userNumber").setValue("9119119110");
+        $("#userNumber").setValue("9119119119");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionByValue("4");
         $(".react-datepicker__year-select").selectOptionByValue("1900");
@@ -32,9 +32,19 @@ public class TexBoxTest1 {
         $(byText("NCR")).click();
         $("#react-select-4-input").setValue("d");
         $(byText("Delhi")).click();
-
-
-        System.out.println("debug");
+        $("#submit").click();
+        $(".table-responsive").shouldHave(text("Vasya Vasya"),
+                text("1@1.com"),
+                text("Male"),
+                text("9119119119"),
+                text("29 May,1900"),
+                text("Arts"),
+                text("Sports, Reading, Music"),
+                text("Arts"),
+                text("Music"),
+                text("test.txt"),
+                text("Vasya"),
+                text("NCR Delhi"));
 
     }
 }
