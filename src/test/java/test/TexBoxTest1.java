@@ -40,8 +40,6 @@ public class TexBoxTest1 {
                 text("29 May,1900"),
                 text("Arts"),
                 text("Sports, Reading, Music"),
-                text("Arts"),
-                text("Music"),
                 text("test.txt"),
                 text("Vasya"),
                 text("NCR Delhi"));
