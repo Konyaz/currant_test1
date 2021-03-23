@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TexBoxTest1 {
+public class TextBoxTest1 {
     @Test
     void successfulFillTest() {
         open("https://demoqa.com/automation-practice-form");
